@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ClimaHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ClimaHub</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="toolkit.html">Toolkit</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero contact-hero">
+            <div class="container">
+                <h1>Connect With Us</h1>
+                <p class="subtitle">We're here to listen, support, and collaborate</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:luckychalonreay@gmail.com">luckychalonreay@gmail.com</a>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <a href="tel:+254713000769">+254 713 000 769</a>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Malindi, Kenya</p>
+                        </div>
+                        <div class="social-media">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">-- Select Subject --</option>
+                                    <option value="story">Share My Story</option>
+                                    <option value="support">Mental Health Support</option>
+                                    <option value="resources">Resource Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest resources, events, and survivor stories</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn subscribe-btn">Subscribe</button>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent">I agree to receive emails from ClimaHub</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="ambassador-section">
+            <div class="container">
+                <div class="ambassador-content">
+                    <h2>Become a ClimaHub Ambassador</h2>
+                    <p>Join our network of community leaders bringing ClimaHub resources to women in need across Africa.</p>
+                    <div class="ambassador-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <p>Organize local support groups</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bullhorn"></i>
+                            <p>Amplify survivor stories</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hands-helping"></i>
+                            <p>Connect communities to resources</p>
+                        </div>
+                    </div>
+                    <button class="btn ambassador-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <img src="images/logo.png" alt="ClimaHub Logo" class="footer-logo">
+              <p>From Climate Disaster to Climate Leadership</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="stories.html">Survivor Stories</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="toolkit.html">Advocacy Toolkit</a></li>
+                <li><a href="resources.html">Funding & Recovery</a></li>
+                <li><a href="community.html">Community Groups</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>Subscribe for updates on our initiatives and events.</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ClimaHub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <div class="success-modal hidden">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. Our team will respond within 48 hours.</p>
+            <button class="btn close-success-btn">Close</button>
+        </div>
+    </div>
+
+    <div class="ambassador-modal hidden">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Ambassador Program</h3>
+            <div class="ambassador-info">
+                <h4>Requirements:</h4>
+                <ul>
+                    <li>Passion for climate justice and women's empowerment</li>
+                    <li>Active in your local community</li>
+                    <li>Commitment to 5 hours/week</li>
+                    <li>6-month minimum commitment</li>
+                </ul>
+                
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Training in trauma-informed support</li>
+                    <li>Networking with other ambassadors</li>
+                    <li>Access to exclusive resources</li>
+                    <li>Leadership development</li>
+                </ul>
+            </div>
+            <form class="ambassador-application">
+                <div class="form-group">
+                    <label for="ambassador-name">Full Name</label>
+                    <input type="text" id="ambassador-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="ambassador-email">Email</label>
+                    <input type="email" id="ambassador-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="ambassador-location">Location (City/Region)</label>
+                    <input type="text" id="ambassador-location" required>
+                </div>
+                <div class="form-group">
+                    <label for="ambassador-experience">Relevant Experience</label>
+                    <textarea id="ambassador-experience" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ambassador-why">Why do you want to be an ambassador?</label>
+                    <textarea id="ambassador-why" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-ambassador-btn">Apply Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

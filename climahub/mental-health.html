@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support | ClimaHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ClimaHub</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="mental-health.html" class="active">Mental Health</a></li>
+                    <li><a href="toolkit.html">Toolkit</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero mental-health-hero">
+            <div class="container">
+                <h1>Mental Health Support</h1>
+                <p>Your emotional wellbeing matters as much as your physical safety. Find support, tools, and community care here.</p>
+            </div>
+        </section>
+
+        <section class="ai-chatbot-section">
+            <div class="container">
+                <div class="chatbot-container">
+                    <h2>Nuru - Your Emotional Support Companion</h2>
+                    <div class="chatbot">
+                        <div class="chatbot-header">
+                            <div class="chatbot-avatar">N</div>
+                            <h3>Nuru</h3>
+                        </div>
+                        <div class="chatbot-messages" id="chatbot-messages">
+                            <div class="message bot-message">
+                                <p>Hi, I'm Nuru. Want to do a 2-minute emotional check-in?</p>
+                            </div>
+                        </div>
+                        <div class="chatbot-input">
+                            <input type="text" id="user-input" placeholder="Type how you're feeling...">
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </div>
+                    <p class="disclaimer">Note: Nuru is not a substitute for professional help. In crisis? Contact a therapist immediately.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="therapist-directory">
+            <div class="container">
+                <h2>Find Professional Support</h2>
+                <div class="therapists-grid">
+                    <div class="therapist-card">
+                        <div class="therapist-img" style="background-image: url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80');"></div>
+                        <h3>Dr. Lorna Wekesa</h3>
+                        <p class="specialty">Trauma Therapist, Nairobi</p>
+                        <p>Specializes in climate-related trauma and displacement. Offers sliding scale fees.</p>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+                    <div class="therapist-card">
+                        <div class="therapist-img" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80');"></div>
+                        <h3>Grace Sifa</h3>
+                        <p class="specialty">Climate Grief Counselor, Mombasa</p>
+                        <p>Focuses on eco-anxiety and loss related to environmental changes.</p>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+                    <div class="therapist-card">
+                        <div class="therapist-img" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80');"></div>
+                        <h3>Paul Kimani</h3>
+                        <p class="specialty">PTSD Specialist, Kisumu</p>
+                        <p>Works with flood and disaster survivors using evidence-based therapies.</p>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="self-care-toolkit">
+            <div class="container">
+                <h2>Self-Care Toolkit</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>Grounding Exercises</h3>
+                        <p>Simple techniques to manage anxiety after climate events.</p>
+                        <a href="#" class="btn" id="download-pdf">Download PDF</a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>5-Minute Breathing Audio</h3>
+                        <p>Guided meditation to restore calm.</p>
+                        <button class="btn" id="play-audio">Play Audio</button>
+                        <audio id="breathing-audio" src="#" preload="auto"></audio>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Journaling Prompts</h3>
+                        <p>Start writing to process your experiences.</p>
+                        <button class="btn" id="show-prompts">Show Prompts</button>
+                        <div class="journal-prompts" id="journal-prompts" style="display: none;">
+                            <p>1. What emotions surfaced during the climate event?</p>
+                            <p>2. What strengths helped you cope?</p>
+                            <p>3. What support do you need now?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-section">
+            <div class="container">
+                <div class="emergency-card">
+                    <h2>In Crisis?</h2>
+                    <p>If you're experiencing severe distress or suicidal thoughts, please reach out immediately:</p>
+                    <ul>
+                        <li>Kenya Red Cross Psychological Support: 1199</li>
+                        <li>Emergency Mental Health Helpline: +254 20 388 2222</li>
+                        <li>Text "HELP" to 2121</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <img src="images/logo.png" alt="ClimaHub Logo" class="footer-logo">
+              <p>From Climate Disaster to Climate Leadership</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="stories.html">Survivor Stories</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="toolkit.html">Advocacy Toolkit</a></li>
+                <li><a href="resources.html">Funding & Recovery</a></li>
+                <li><a href="community.html">Community Groups</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>Subscribe for updates on our initiatives and events.</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ClimaHub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survivor Stories - ClimaHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ClimaHub Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="stories.html" class="active">Stories</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="toolkit.html">Toolkit</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero" style="background-image: url('images/stories-hero.jpg');">
+        <div class="container">
+            <h1>Survivor Stories</h1>
+            <p>Real experiences from women and girls affected by climate change</p>
+        </div>
+    </section>
+
+    <section class="stories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Stories</h2>
+                <div class="divider"></div>
+                <p>These powerful narratives show the human face of climate change and the resilience of those who survive it.</p>
+            </div>
+
+            <div class="stories-grid">
+                <article class="story-card" id="story1">
+                    <div class="story-header">
+                        <span class="story-emoji">🧡</span>
+                        <h3>"We Walked for Water, Now I Speak for My Village"</h3>
+                        <p class="author">Fatuma, 37, Turkana</p>
+                    </div>
+                    <div class="story-excerpt">
+                        <p>"In 2022, the drought dried our last borehole. My husband died walking for water, and I became a widow with five children..."</p>
+                        <button class="btn-read-more" onclick="toggleStory('story1')">Read Full Story</button>
+                    </div>
+                    <div class="story-full" style="display: none;">
+                        <p>"In 2022, the drought dried our last borehole. My husband died walking for water, and I became a widow with five children. I didn't know grief could feel like fire in the chest. For months, I moved through days like a shadow, tending to my children but feeling nothing.</p>
+                        <p>Then a community health worker told me about ClimaHub. At first, I didn't see the point. What would writing change? But one night, when the children were asleep, I began to type on the borrowed tablet. The words poured out - about the dust that filled our lungs, about watching my strong husband grow weak, about the shame of begging for water.</p>
+                        <p>When I shared my story on ClimaHub, something unexpected happened. Women from across Kenya responded. Some shared similar losses. Others offered practical help. A group in Nairobi sent solar-powered water purifiers. But most importantly, I wasn't a victim anymore — I was a witness, a warrior, a woman whose voice matters.</p>
+                        <p>Now I organize water truck deliveries to our village and speak at county meetings. The drought took much, but it gave me this: the certainty that my voice can make change."</p>
+                        <button class="btn-read-less" onclick="toggleStory('story1')">Read Less</button>
+                    </div>
+                    <div class="story-actions">
+                        <button class="btn-like" onclick="reactToStory('story1', 'like')"><i class="far fa-heart"></i> <span class="like-count">124</span></button>
+                        <button class="btn-comment" onclick="toggleComments('story1')"><i class="far fa-comment"></i> Comment</button>
+                        <button class="btn-share"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="story-comments" id="story1-comments" style="display: none;">
+                        <h4>Comments</h4>
+                        <div class="comment-form">
+                            <textarea placeholder="Add your comment..."></textarea>
+                            <button class="btn-post-comment">Post</button>
+                        </div>
+                        <div class="comments-list">
+                            <div class="comment">
+                                <p class="comment-author">Amina from Garissa</p>
+                                <p class="comment-text">Your strength inspires me, sister. We face similar struggles here. Let's connect!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="story-card" id="story2">
+                    <div class="story-header">
+                        <span class="story-emoji">💧</span>
+                        <h3>"Floods Took My Schoolbag, But Not My Future"</h3>
+                        <p class="author">Zainab, 16, Kilifi</p>
+                    </div>
+                    <div class="story-excerpt">
+                        <p>"My books floated away when the river broke its banks. But I remembered what my mother said — 'You carry your future inside you.'..."</p>
+                        <button class="btn-read-more" onclick="toggleStory('story2')">Read Full Story</button>
+                    </div>
+                    <div class="story-full" style="display: none;">
+                        <p>"My books floated away when the river broke its banks. The water came so fast we barely had time to grab our baby brother before scrambling onto the roof. For three days we waited there, watching our home fill with brown water.</p>
+                        <p>When we finally got to dry land, everything was gone - my uniform, my exercise books, the English dictionary I'd saved for months to buy. I cried for those books more than our ruined furniture. School was my way out, my chance to become a doctor. Without materials, how would I study?</p>
+                        <p>But I remembered what my mother said — 'You carry your future inside you.' ClimaHub gave me a space to write, and strangers from across Kenya read my story. One teacher sent me used books. Another woman paid for my school fees for a term. I'm now writing poems to heal other girls like me.</p>
+                        <p>The floods come more often now, but so does help. Through ClimaHub, I've learned that disaster doesn't have to mean the end of dreams."</p>
+                        <button class="btn-read-less" onclick="toggleStory('story2')">Read Less</button>
+                    </div>
+                    <div class="story-actions">
+                        <button class="btn-like" onclick="reactToStory('story2', 'like')"><i class="far fa-heart"></i> <span class="like-count">89</span></button>
+                        <button class="btn-comment" onclick="toggleComments('story2')"><i class="far fa-comment"></i> Comment</button>
+                        <button class="btn-share"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="story-comments" id="story2-comments" style="display: none;">
+                        <h4>Comments</h4>
+                        <div class="comment-form">
+                            <textarea placeholder="Add your comment..."></textarea>
+                            <button class="btn-post-comment">Post</button>
+                        </div>
+                        <div class="comments-list">
+                            <div class="comment">
+                                <p class="comment-author">Teacher Jane</p>
+                                <p class="comment-text">Zainab, your resilience is remarkable. I'd love to send you more books - email me!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="story-card" id="story3">
+                    <div class="story-header">
+                        <span class="story-emoji">🌪</span>
+                        <h3>"Cyclone Ruth Left Me Homeless — ClimaHub Helped Me Find Community"</h3>
+                        <p class="author">Mirembe, 29, Busia</p>
+                    </div>
+                    <div class="story-excerpt">
+                        <p>"I used to think therapy was for rich people. But after the cyclone, I couldn't sleep or eat. Through ClimaHub's AI chatbot and therapist referrals..."</p>
+                        <button class="btn-read-more" onclick="toggleStory('story3')">Read Full Story</button>
+                    </div>
+                    <div class="story-full" style="display: none;">
+                        <p>"I used to think therapy was for rich people. But after the cyclone, I couldn't sleep or eat. For weeks after Cyclone Ruth destroyed our home, I jumped at every sound of wind. My hands shook so badly I couldn't even hold my baby properly.</p>
+                        <p>At the displacement camp, a volunteer told me about ClimaHub's mental health resources. I was skeptical, but desperate. The AI chatbot, Nuru, became my first lifeline. It didn't judge my tears or tell me to 'be strong.' It just listened and taught me simple breathing exercises.</p>
+                        <p>Through ClimaHub, I got connected to a counselor who understood climate trauma. And I met other women online who knew my pain. We formed a support group that still meets weekly, even though we're now rebuilding our homes.</p>
+                        <p>The cyclone took our roof, but it also broke down walls I didn't know I'd built around my heart. Now I help other women access the mental health support I almost didn't seek."</p>
+                        <button class="btn-read-less" onclick="toggleStory('story3')">Read Less</button>
+                    </div>
+                    <div class="story-actions">
+                        <button class="btn-like" onclick="reactToStory('story3', 'like')"><i class="far fa-heart"></i> <span class="like-count">156</span></button>
+                        <button class="btn-comment" onclick="toggleComments('story3')"><i class="far fa-comment"></i> Comment</button>
+                        <button class="btn-share"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="story-comments" id="story3-comments" style="display: none;">
+                        <h4>Comments</h4>
+                        <div class="comment-form">
+                            <textarea placeholder="Add your comment..."></textarea>
+                            <button class="btn-post-comment">Post</button>
+                        </div>
+                        <div class="comments-list">
+                            <div class="comment">
+                                <p class="comment-author">Sarah K.</p>
+                                <p class="comment-text">Your story about mental health is so important. Thank you for breaking the silence!</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="share-story" id="share-story">
+        <div class="container">
+            <div class="section-header">
+                <h2>Share Your Story</h2>
+                <div class="divider"></div>
+                <p>Your experience matters. By sharing your story, you help others feel less alone and create change.</p>
+            </div>
+            <form class="story-form">
+                <div class="form-group">
+                    <label for="story-title">Title of Your Story</label>
+                    <input type="text" id="story-title" placeholder="e.g. 'How the Drought Changed Me'">
+                </div>
+                <div class="form-group">
+                    <label for="story-content">Your Story</label>
+                    <textarea id="story-content" placeholder="Tell your story in your own words..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="story-author">Your Name (or anonymous)</label>
+                    <input type="text" id="story-author" placeholder="How you'd like to be credited">
+                </div>
+                <div class="form-group">
+                    <label for="story-location">Location</label>
+                    <input type="text" id="story-location" placeholder="Where your story takes place">
+                </div>
+                <div class="form-group">
+                    <label for="story-email">Email (optional, for follow-up)</label>
+                    <input type="email" id="story-email" placeholder="Your email address">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Story</button>
+                    <button type="reset" class="btn btn-outline">Clear Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <img src="images/logo.png" alt="ClimaHub Logo" class="footer-logo">
+              <p>From Climate Disaster to Climate Leadership</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="stories.html">Survivor Stories</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="toolkit.html">Advocacy Toolkit</a></li>
+                <li><a href="resources.html">Funding & Recovery</a></li>
+                <li><a href="community.html">Community Groups</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>Subscribe for updates on our initiatives and events.</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ClimaHub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

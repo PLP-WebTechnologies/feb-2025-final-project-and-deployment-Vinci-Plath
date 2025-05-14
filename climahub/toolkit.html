@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy Toolkit | ClimaHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ClimaHub</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="mental-health.html">Mental Health</a></li>
+                    <li><a href="toolkit.html" class="active">Toolkit</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero toolkit-hero">
+            <div class="container">
+                <h1>Advocacy & NGO Toolkit</h1>
+                <p class="subtitle">Empowering your climate justice work with resources, tools, and strategic guidance</p>
+            </div>
+        </section>
+
+        <section class="toolkit-section">
+            <div class="container">
+                <h2>Free Resources</h2>
+                <div class="toolkit-grid">
+                    <div class="toolkit-card">
+                        <h3>Climate Campaign Playbook</h3>
+                        <p>Step-by-step guide to launching effective climate justice campaigns in your community.</p>
+                        <a href="#" class="btn download-btn">Download PDF</a>
+                    </div>
+                    <div class="toolkit-card">
+                        <h3>Media Training Kit</h3>
+                        <p>Learn how to share your story powerfully with journalists and media outlets.</p>
+                        <a href="#" class="btn download-btn">Download PDF</a>
+                    </div>
+                    <div class="toolkit-card">
+                        <h3>Story Licensing Guide</h3>
+                        <p>Understand your rights when sharing your story with organizations and media.</p>
+                        <a href="#" class="btn download-btn">Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="premium-section">
+            <div class="container">
+                <h2>Premium Tools</h2>
+                <div class="premium-card">
+                    <div class="premium-content">
+                        <h3>ClimaHub Pro</h3>
+                        <p>Access our full suite of advanced advocacy tools, training modules, and personalized support.</p>
+                        <div class="coming-soon">Coming Soon!</div>
+                        <ul class="premium-features">
+                            <li>Custom Campaign Strategy Builder</li>
+                            <li>Live Q&A with Climate Policy Experts</li>
+                            <li>Advanced Media Training Videos</li>
+                            <li>Priority Story Placement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-tool-section">
+            <div class="container">
+                <h2>Quote Builder Tool</h2>
+                <p>Create powerful quotes from survivor stories to use in your advocacy work.</p>
+                <form class="quote-tool-form">
+                    <div class="form-group">
+                        <label for="story-select">Select a Story:</label>
+                        <select id="story-select" name="story-select">
+                            <option value="">-- Choose a Story --</option>
+                            <option value="flood">"Floods Took My Schoolbag, But Not My Future"</option>
+                            <option value="drought">"We Walked for Water, Now I Speak for My Village"</option>
+                            <option value="cyclone">"Cyclone Ruth Left Me Homeless"</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-text">Extracted Quote:</label>
+                        <textarea id="quote-text" name="quote-text" rows="4" readonly></textarea>
+                    </div>
+                    <button type="button" class="btn generate-btn">Generate Quote</button>
+                    <button type="button" class="btn copy-btn">Copy to Clipboard</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <img src="images/logo.png" alt="ClimaHub Logo" class="footer-logo">
+              <p>From Climate Disaster to Climate Leadership</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="stories.html">Survivor Stories</a></li>
+                <li><a href="mental-health.html">Mental Health</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="toolkit.html">Advocacy Toolkit</a></li>
+                <li><a href="resources.html">Funding & Recovery</a></li>
+                <li><a href="community.html">Community Groups</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>Subscribe for updates on our initiatives and events.</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 ClimaHub. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
