@@ -3,7 +3,7 @@
 ClimaHub is a digital platform dedicated to amplifying the voices of women and girls affected by climate change. The platform serves as a sanctuary for sharing survival stories, accessing emotional support, and transforming personal experiences into policy action.
 
 ## Live Website
-You can access the live website here: [ClimaHub Live Site](https://yourproject.netlify.app)
+You can access the live website here: [ClimaHub Live Site](https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-Vinci-Plath/)
 
 
 ## 🌟 Features
